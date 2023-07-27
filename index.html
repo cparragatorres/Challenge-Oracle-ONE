@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img class="header__logo" src="images/vector.png" alt="logo">
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="div__left">
+                <textarea id="ingresoTexto" class="ingreso__texto" placeholder="Ingrese texto aquí"></textarea>
+                <div class="left__footer">
+                    <img src="images/attention.png" alt="attention-ico">
+                    <span class="left__info">Solo letras minúsculas y sin acentos</spa>
+                    <div class="left__botones">
+                        <button id="botonEncriptar" class="boton__encriptar">Encriptar</button>
+                        <button id="botonDesencriptar" class="boton__desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+            <div id="divRight" class="div__right">
+                <img id="munheco" class="munheco" src="images/munheco.png" alt="">
+                <textarea id="mensajeFinal" class="mensaje__final" placeholder="Ningún mensaje fue encontrado"></textarea>
+                <p id="rightInfo" class="right__info">Ingresa el texto que desees encriptar o desencriptar</p>
+                <button id="botonCopiar" class="boton__copiar oculto" >Copiar</button>
+            </div>
+        </div>
+        </main>
+    <script src="script.js"></script>
+    </body>
+</html>
